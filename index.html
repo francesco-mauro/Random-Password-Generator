@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Generatore di Password Casuali</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <h1>Generatore di Password Casuali</h1>
+
+    <label for="lunghezza">Lunghezza della Password:</label>
+    <input type="number" id="lunghezza" value="12" min="4" max="128"><br><br>
+
+    <label>
+        <input type="checkbox" id="maiuscole" checked>
+        Lettere Maiuscole
+    </label>
+
+    <label>
+        <input type="checkbox" id="minuscole" checked>
+        Lettere Minuscole
+    </label>
+
+    <label>
+        <input type="checkbox" id="numeri" checked>
+        Numeri
+    </label>
+
+    <label>
+        <input type="checkbox" id="simboli">
+        Simboli
+    </label><br>
+
+    <button onclick="generaPassword()">Genera Password</button>
+
+    <div id="passwordGenerata"></div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
